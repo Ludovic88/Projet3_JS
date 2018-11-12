@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Vélo'v | résèrver votre vélo à Lyon</title>
+		<!--  META  -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Vélo'v, résèrver votre vélo libre service à Lyon, vous pouvez résèrver directement en ligne sur notre site !"/>
+		<!--  LINK  -->
+		<link rel="icon" href="images/Vélo'v_Logo.gif" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 991px)" href="css/moyenne_resolution.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/petite_resolution.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	</head>
+
+	<body>
+
+		<!--  HEADER  -->
+		<header>
+			<div id="banniere">
+				<img src="images/Logo_Velov.gif" alt="Logo Vélo'v" id="logo_banniere">
+				<h1 >Location de Velo'v à Lyon</h1>
+			</div>
+			<div id="text_welcome">
+				<h2>Bienvenue sur Vélo'v</h2>
+				<p>Louer et restituer votre vélo sur toutes les bornes de la ville.</p>
+				<p>Accessible 24h/24h 7jrs/7jrs avec ou sans abonnement, avec Velo'V évadez vous à petit prix !</p>
+			</div>
+		</header>
+
+
+		<!--  SECTION 1 CAROUSSEL  -->
+
+		<section class="block_section">
+			<div id="slider">
+				<div class="slides">
+					<figure class="slider active">
+						<img src="images/carou1.jpg" alt="images de présentation 1">
+						<figcaption class="texts">
+							<h2>Etape 1</h2>
+							<p>Cliquez sur votre station</p>
+						</figcaption>
+					</figure>
+					<figure class="slider">
+						<img src="images/carou2.jpg" alt="images de présentation 3">
+						<figcaption class="texts">
+							<h2>Etape 2</h2>
+							<p>Signez dans le cadre réservé</p>
+						</figcaption>
+					</figure>
+					<figure class="slider">
+						<img src="images/carou3.jpg" alt="images de présentation 3">
+						<figcaption class="texts">
+							<h2>Etape 3</h2>
+							<p>Allez chercher votre vélo et roulez !</p>
+						</figcaption>
+					</figure>
+				</div>
+				<button class="next"><i class="fa fa-chevron-right" style="color: white;"></i></button>
+				<button class="prev"><i class="fa fa-chevron-left" style="color: white;"></i></button>
+			</div>
+		</section>
+
+
+		<!--  SECTION 2 MAP && RESERVATION  -->
+
+		<section class="block_section">
+			<header id="header_map">
+				<h2>Carte intéractive</h2>
+				<table>
+					<tr>
+						<td><img src="images/green-marker.png" alt="marqueur vert">Vélo(s) disponible(s) et borne(s) aussi</td>
+						<td><img src="images/orange-marker.png" alt="marqueur orange">Vélo(s) disponible(s) et borne non disponible</td>
+					</tr>
+					<tr>
+						<td><img src="images/red-marker.png" alt="marqueur rouge">Vélo non disponible et borne(s) disponible(s)</td>
+						<td><img src="images/black-marker.png" alt="marqueur noir">Station fermer</td>
+					</tr>
+				</table>
+			</header>
+			<div id="carte_interactive">
+			</div>
+		</section>
+
+
+		<!--  FOOTER  -->
+
+		<footer>
+			<p>© 2018 Ludovic BLONDON - Projet 3 OpenClassrooms.</p>
+		</footer>
+
+
+		<!--  SCRIPT  -->
+
+		<script src="js/ajax.js"></script>
+		<script src="js/diaporama.js"></script>
+		<script src="js/signature.js"></script>
+		<script src="js/velo.js"></script>
+	    <script src="js/markerclusterer.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-sqeaWv0M0nioTdkbYZ3bQODq2HScQSg&callback=initMap"></script>
+	</body>
+</html>
