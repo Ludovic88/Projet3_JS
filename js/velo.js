@@ -258,7 +258,6 @@ var VeloMap = function(params){
 }
 
 
-
 //	Initialise la map de lyon pour l'api googlemap
 function initMap(){
 	var mapInfosElt = document.createElement("div");
